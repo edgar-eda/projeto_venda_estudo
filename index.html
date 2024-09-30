@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de Serviços de Venda de Planilhas</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Meu Site</h2>
+        <button class="config-button">Configuração</button>
+        <ul>
+            <li><a href="#" class="tab-link" data-tab="home">Início</a></li>
+            <li><a href="#" class="tab-link" data-tab="features">Funcionalidades</a></li>
+            <li><a href="#" class="tab-link" data-tab="pricing">Planos</a></li>
+            <li><a href="#" class="tab-link" data-tab="contact">Contato</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div id="home" class="tab-content">
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h1>Bem-vindo ao nosso site!</h1>
+                    <p>Oferecemos as melhores planilhas para o seu negócio.</p>
+                    <a href="#" class="cta-button">Comece agora!</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="features" class="tab-content" style="display: none;">
+            <div class="features-section">
+                <h2>Funcionalidades</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Fácil de Usar</h3>
+                        <p>Nossas planilhas são intuitivas e fáceis de navegar.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Personalização</h3>
+                        <p>Você pode personalizar nossas planilhas conforme sua necessidade.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Suporte</h3>
+                        <p>Oferecemos suporte completo para todas as nossas planilhas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pricing" class="tab-content" style="display: none;">
+            <div class="pricing-section">
+                <h2>Planos</h2>
+                <div class="pricing-grid">
+                    <div class="plan">
+                        <h3>Plano Básico</h3>
+                        <p>Descrição do plano básico.</p>
+                    </div>
+                    <div class="plan">
+                        <h3>Plano Profissional</h3>
+                        <p>Descrição do plano profissional.</p>
+                    </div>
+                    <div class="plan">
+                        <h3>Plano Premium</h3>
+                        <p>Descrição do plano premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="tab-content" style="display: none;">
+            <div class="contact-section">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para mais informações.</p>
+            </div>
+        </div>
+
+        <!-- Nova Seção de Configuração Moderna -->
+        <div id="config" class="tab-content" style="display: none;">
+            <div class="config-section">
+                <h2>Configurações do Site</h2>
+                <form>
+                    <h3>Informações Gerais</h3>
+                    <div class="input-group">
+                        <label for="site-title">Título do Site:</label>
+                        <input type="text" id="site-title" name="site-title" placeholder="Insira o título do site">
+                    </div>
+                    <div class="input-group">
+                        <label for="admin-email">Email do Administrador:</label>
+                        <input type="email" id="admin-email" name="admin-email" placeholder="Insira o email do administrador">
+                    </div>
+
+                    <h3>Preferências de Exibição</h3>
+                    <div class="input-group">
+                        <label for="theme">Tema:</label>
+                        <select id="theme" name="theme">
+                            <option value="light">Claro</option>
+                            <option value="dark">Escuro</option>
+                        </select>
+                    </div>
+
+                    <h3>Informações de Contato</h3>
+                    <div class="input-group">
+                        <label for="contact-phone">Telefone:</label>
+                        <input type="tel" id="contact-phone" name="contact-phone" placeholder="Insira seu telefone">
+                    </div>
+                    <div class="input-group">
+                        <label for="social-link">Links de Redes Sociais:</label>
+                        <input type="url" id="social-link" name="social-link" placeholder="Insira o link das redes sociais">
+                    </div>
+
+                    <h3>Configurações de Pagamento</h3>
+                    <div class="input-group">
+                        <label for="payment-method">Método de Pagamento:</label>
+                        <select id="payment-method" name="payment-method">
+                            <option value="credit-card">Cartão de Crédito</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank-transfer">Transferência Bancária</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="save-button">Salvar Configurações</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
